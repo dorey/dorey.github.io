@@ -14,4 +14,5 @@ activate :directory_indexes
 
 configure :build do
   # activate :relative_assets
+  set :build_dir, "./"
 end
