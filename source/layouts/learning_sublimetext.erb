@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title><%= data.page.title || "learning sublimetext" %></title>
+
+  <meta name="description" content="tips and tricks for learning sublimetext">
+  <meta name="author" content="Alex Dorey">
+
+  <%= stylesheet_link_tag "normalize", "all" %>
+  <%#= javascript_include_tag  "all" %>
+</head>
+<body class="<%= page_classes %>">
+  <div class="wrap">
+    <h1>
+      Learning a new Text Editor
+    </h1>
+    <% unless data.page.title.nil? %>
+      <h2>
+        <%= data.page.title %>
+      </h2>
+    <% end %>
+
+    <div id="post">
+      <%= yield %>
+    </div>
+    <hr>
+    <nav id="local-posts">
+      <% unless current_page.data.is_blog_index %>
+        <p class="posts-header">
+          Home:
+        </p>
+        <p class="link-back">
+          <%= link_to "&laquo; Learning SublimeText", "/learning_sublimetext", :class => "link-back" %>
+        </p>
+      <% end %>
+      <p class="posts-header">
+        Posts:
+      </p>
+      <ul>
+        <% blog.articles.sort_by(&:date).each do |article| %>
+          <li>
+            <a href="<%= article.url %>">
+              <%= article.title %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
