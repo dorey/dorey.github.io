@@ -1,71 +1,71 @@
-/* line 1, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 1, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 body {
   background: #d4d4d4 url("../images/background.png?middleman-scaffolding-bg");
   font-family: sans-serif; }
 
-/* line 6, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 6, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 a {
   color: #333; }
 
-/* line 10, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 10, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 div.wrap {
   width: 600px;
   margin: 12px auto;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 8px 14px; }
 
-/* line 17, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 17, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 nav#local-posts {
   font-size: smaller; }
-  /* line 19, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+  /* line 19, /share/Code/dorey.github.io/source/stylesheets/all.scss */
   nav#local-posts p {
     margin: 0; }
-  /* line 22, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+  /* line 22, /share/Code/dorey.github.io/source/stylesheets/all.scss */
   nav#local-posts p.posts-header {
     font-size: 11px;
     border-bottom: 1px solid #777;
     margin-top: 4px; }
-  /* line 27, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+  /* line 27, /share/Code/dorey.github.io/source/stylesheets/all.scss */
   nav#local-posts a {
     text-decoration: none;
     background-color: #bbb;
     display: block;
     padding: 4px 8px; }
-    /* line 32, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+    /* line 32, /share/Code/dorey.github.io/source/stylesheets/all.scss */
     nav#local-posts a:hover {
       background-color: #aaa; }
-  /* line 36, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+  /* line 36, /share/Code/dorey.github.io/source/stylesheets/all.scss */
   nav#local-posts ul {
     margin: 0;
     padding: 0;
     list-style-type: none; }
-    /* line 40, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+    /* line 40, /share/Code/dorey.github.io/source/stylesheets/all.scss */
     nav#local-posts ul li {
       margin: 2px 0 0; }
-      /* line 42, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+      /* line 42, /share/Code/dorey.github.io/source/stylesheets/all.scss */
       nav#local-posts ul li:first-child {
         margin: 0; }
-      /* line 45, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+      /* line 45, /share/Code/dorey.github.io/source/stylesheets/all.scss */
       nav#local-posts ul li a {
         padding-left: 26px; }
 
-/* line 52, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 52, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 section.reasoning {
   padding: 2px 6px;
   border: 1px solid #aaa; }
-  /* line 55, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+  /* line 55, /share/Code/dorey.github.io/source/stylesheets/all.scss */
   section.reasoning a {
     color: #666; }
-    /* line 56, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+    /* line 56, /share/Code/dorey.github.io/source/stylesheets/all.scss */
     section.reasoning a:hover {
       color: #333; }
-  /* line 61, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+  /* line 61, /share/Code/dorey.github.io/source/stylesheets/all.scss */
   section.reasoning p {
     color: #666;
     font-size: 11px;
     margin: 5px 10px; }
 
-/* line 68, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 68, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 h1 {
   /*many of these values are carried over from the middleman project scaffolding*/
   color: #555;
@@ -76,12 +76,12 @@ h1 {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   margin: 0; }
 
-/* line 79, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 79, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 h2 {
   font-size: 18px;
   color: #444; }
 
-/* line 85, /share/Code/dorey_github_io/source/stylesheets/all.scss */
+/* line 85, /share/Code/dorey.github.io/source/stylesheets/all.scss */
 span.ish {
   font-size: smaller;
   font-style: italic;

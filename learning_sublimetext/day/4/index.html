@@ -26,9 +26,11 @@
     
 
     <div id="post">
-      <p><em>Ctrl-D</em> will select the current word. Subsequent &#8220;Ctrl-D&#8221; will select the next instance of that word in the file.</p>
+      <p><em>Ctrl-D</em> will select the current word. Subsequent &#8220;Ctrl-D&#8221; will <em>add selection of</em> the next instance of that word in the file.</p>
 
-<p><em>I use this trick often during refactoring to check how many occurrences of a given word are in a file and quickly see where it is. If there is a better way to do this that doesn&#8217;t involve jumping to a different part of the file then I would like to learn it.</em></p>
+<p><em>Note</em>: This <code>add-next-selection</code> command is reversed by the <code>undo-latest-added-selection</code> command: <code>Ctrl-U</code></p>
+
+<p><em>I originally confused this with the &#8220;find-next&#8221; functionality provided by F3.</em></p>
     </div>
     <hr>
     <nav id="local-posts">
@@ -78,6 +80,12 @@
           <li>
             <a href="/learning_sublimetext/day/5/">
               Day 5: Quick searching entire project
+            </a>
+          </li>
+        
+          <li>
+            <a href="/learning_sublimetext/day/6/">
+              Day 6: Multiple cursors
             </a>
           </li>
         

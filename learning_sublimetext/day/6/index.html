@@ -5,7 +5,7 @@
 
   <!-- Always force latest IE rendering engine or request Chrome Frame -->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <title>Day 1: Zen Coding</title>
+  <title>Day 6: Multiple cursors</title>
 
   <meta name="description" content="tips and tricks for learning sublimetext">
   <meta name="author" content="Alex Dorey">
@@ -14,39 +14,43 @@
 <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
   
 </head>
-<body class="learning_sublimetext learning_sublimetext_day learning_sublimetext_day_1 learning_sublimetext_day_1_index">
+<body class="learning_sublimetext learning_sublimetext_day learning_sublimetext_day_6 learning_sublimetext_day_6_index">
   <div class="wrap">
     <h1>
       Learning a new Text Editor
     </h1>
     
       <h2>
-        Day 1: Zen Coding
+        Day 6: Multiple cursors
       </h2>
     
 
     <div id="post">
-      <p>&#8220;Zen coding&#8221; is a quick way to build HTML. It allows you to describe a one-line path (similar to an XPath) and expand it out into fully indented, multi-line HTML.</p>
+      <p>This is an oft-touted mega feature of sublime text that I have to admit that I do not fully understand at this moment.</p>
 
-<p>If I want to create a <code>div</code> with a <code>ol</code> list with five items in it, I would start by describing the list:</p>
+<p>I have seen videos of people praising it as a huge timesaver over the traditional &#8220;Find and replace&#8221; method.</p>
 
-<pre><code>div&gt;ol&gt;li*5&gt;a</code></pre>
+<p>I&#8217;m writing it up for day 6 because it is pretty neat in those cases where you need to use it.</p>
 
-<p>I could also add class names or tag IDs:</p>
+<h2 id='selecting_text'>Selecting Text</h2>
 
-<pre><code>div#wrap&gt;ol.items&gt;li*3&gt;a</code></pre>
+<p>First, you have the ability to select incongruous text. You can do this by either:</p>
 
-<p>And this would get expanded out to:</p>
+<ul>
+<li>With a single block of text selected, you can <code>Ctrl-Click</code> on the words you want to select.</li>
 
-<pre><code> &lt;div id=&quot;wrap&quot;&gt;
- 	&lt;ol class=&quot;items&quot;&gt;
- 		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
- 		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
- 		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
- 	&lt;/ol&gt;
- &lt;/div&gt;</code></pre>
+<li>With a single word or set of words selected, you can <code>Ctrl-D</code> (quick-add-next) until you have what you want selected.</li>
 
-<p>This feature is available as an add-on for SublimeText, and can be downloaded <a href='http://code.google.com/p/zen-coding/'>here</a>. It&#8217;s not a game-changer, but having this in the tool belt will help shave off a good deal of time from one of the more monotonous day-to-day tasks: editing XML.</p>
+<li>With a single word or set of words selected, you can <code>Alt-F3</code> to quick-select-all matches in the document.</li>
+</ul>
+
+<h2 id='bulk_changing_the_selections'>Bulk changing the selections</h2>
+
+<p>Once you have incongruous selections, you&#8217;ll notice an army of little text cursors waiting to do your bidding. Anything you type or do will be done for each cursor.</p>
+
+<h2 id='getting_out_of_multiple_selections'>Getting out of multiple selections</h2>
+
+<p><code>Escape</code> will cancel the multiple selections and drop you off at the top one.</p>
     </div>
     <hr>
     <nav id="local-posts">
