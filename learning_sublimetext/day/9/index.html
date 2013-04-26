@@ -5,7 +5,7 @@
 
   <!-- Always force latest IE rendering engine or request Chrome Frame -->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <title>Day 5: Quick searching entire project</title>
+  <title>Zen Coding</title>
 
   <meta name="description" content="tips and tricks for learning sublimetext">
   <meta name="author" content="Alex Dorey">
@@ -14,27 +14,41 @@
 <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
   
 </head>
-<body class="learning_sublimetext learning_sublimetext_day learning_sublimetext_day_5 learning_sublimetext_day_5_index">
+<body class="learning_sublimetext learning_sublimetext_day learning_sublimetext_day_9 learning_sublimetext_day_9_index">
   <div class="wrap">
     <h1>
       Learning a new Text Editor
     </h1>
     
       <h2>
-        Day 5: Quick searching entire project
+        Zen Coding
       </h2>
     
 
     <div id="post">
-      <p><em>Ctrl-F</em> and <em>Ctrl-Shift-F</em> will open up an input box to quick box to search the entire project.</p>
+      <p><em>This was day 1, but I&#8217;ve moved it to day 8 because it is a plug in.</em></p>
 
-<p>In the individual file search (<code>Ctrl-F</code>) you can select the next occurrence with the <code>F3</code> key.</p>
+<p>&#8220;Zen coding&#8221; is a quick way to build HTML. It allows you to describe a one-line path (similar to an XPath) and expand it out into fully indented, multi-line HTML.</p>
 
-<p>Unlike TM, which opens up a separate &#8220;results&#8221; box, ST opens up a new text buffer to display the results. (I think this resembles how emacs would display the results.)</p>
+<p>If I want to create a <code>div</code> with a <code>ol</code> list with five items in it, I would start by describing the list:</p>
 
-<p>Conveniently, the paths that show up in the buffer are double-clickable and take you directly to the file.</p>
+<pre><code>div&gt;ol&gt;li*5&gt;a</code></pre>
 
-<p><em>Personal note: I use this feature every day in TM. Very glad to see it exists in ST as well.</em></p>
+<p>I could also add class names or tag IDs:</p>
+
+<pre><code>div#wrap&gt;ol.items&gt;li*3&gt;a</code></pre>
+
+<p>And this would get expanded out to:</p>
+
+<pre><code> &lt;div id=&quot;wrap&quot;&gt;
+ 	&lt;ol class=&quot;items&quot;&gt;
+ 		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+ 		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+ 		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+ 	&lt;/ol&gt;
+ &lt;/div&gt;</code></pre>
+
+<p>This feature is available as an add-on for SublimeText, and can be downloaded <a href='http://code.google.com/p/zen-coding/'>here</a>. It&#8217;s not a game-changer, but having this in the tool belt will help shave off a good deal of time from one of the more monotonous day-to-day tasks: editing XML.</p>
     </div>
     <hr>
     <nav id="local-posts">
