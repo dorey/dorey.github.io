@@ -35,8 +35,9 @@
 
     <div class="container">
         <h1>Today's Repackaged News Headlines</h1>
-        <video controls>
-            <source src="https://paste.ms/assets/today.mp4" type="video/mp4">
+        <h3 class="date"></h3>
+        <video controls autoplay>
+            <source type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p>
@@ -47,6 +48,21 @@
             All articles are pulled from <a href="https://democracynow.org/">DemocracyNow!</a> and the headlines segment on weekday mornings.
         </p>
     </div>
-
+    <script type="text/javascript">
+        let vidUrl;
+        const today = (params) => {
+            setVidUrl(params.file);
+            document.querySelector('.date').innerHTML = `(${params.today})`;
+        }
+        const setVidUrl = (file) => {
+            document.querySelector('video source').src = vidUrl = file;
+        }
+    </script>
+    <script src="https://paste.ms/assets/news/today.js"></script>
+    <script type="text/javascript">
+        if (!vidUrl) {
+            setVidUrl("https://paste.ms/assets/today.mp4");
+        }
+    </script>
 </body>
 </html>
